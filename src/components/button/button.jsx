@@ -1,6 +1,6 @@
-
-export function Button({ children }) {
+import classes from './button.module.css'
+export function Button({ children, onClick }) {
     return (
-        <button>{children}</button>
+        <button className={classes.button} onClick={onClick}>{children}</button>
     )
 }
